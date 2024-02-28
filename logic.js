@@ -24,7 +24,7 @@ for (let i = 0; i < buttons.length; i++){
 
 function closeOtherContent(index) {
     for (let j = 0; j < display.length; j++) {
-        if (j !== index) {
+        if (j !== index && display[j] === "block") {
             details[j].style.display = "none";
             display[j] = "none";
             buttons[j].classList.remove("active")
