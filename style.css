@@ -26,7 +26,7 @@ body{
     border-radius: 5px;
     border: 1px solid white;
     transition: 1s;
-    cursor: pointer;
+    cursor: pointer !important;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
@@ -44,7 +44,9 @@ body{
     padding: 4px 4px;
     border: 1px solid white;
     border-radius: 2px;
+    transition: max-height 0.3s ease-in-out;
 }
 .display{
     display: block;
+    transition: max-height 0.3s ease-in-out;
 }

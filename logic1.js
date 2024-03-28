@@ -1,10 +1,18 @@
 const ref = document.getElementsByClassName("sections")[0];
 
 ref.addEventListener("click", function(e){
+    //close other sections if open
+    const open = document.getElementsByClassName("display")[0];
+    console.log(open);
+    if (open !== undefined){
+        open.classList.remove('display') 
+    }
+    //handle the section clicked on
     const target = e.target;
-    console.log(target);
     const content = target.nextElementSibling;
-    content.classList.toggle('display')
+    if(open !== content){
+        content.classList.toggle('display')
+    }
 });
 
 // The provided code is an example of event delegation.
